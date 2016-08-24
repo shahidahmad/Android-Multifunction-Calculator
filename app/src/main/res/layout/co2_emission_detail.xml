@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip"
+    >
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/tripId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance(KM): "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView33"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emission: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView44"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/vehicle1"
+        android:layout_above="@+id/textView22"
+        android:layout_alignLeft="@+id/distance1"
+        android:layout_alignStart="@+id/distance1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/distance1"
+        android:layout_above="@+id/textView33"
+        android:layout_alignLeft="@+id/emission1"
+        android:layout_alignStart="@+id/emission1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/notes1"
+        android:layout_above="@+id/textView55"
+        android:layout_alignLeft="@+id/date1"
+        android:layout_alignStart="@+id/date1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/emission1"
+        android:layout_below="@+id/notes1"
+        android:layout_alignLeft="@+id/notes1"
+        android:layout_alignStart="@+id/notes1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/date1"
+        android:layout_above="@+id/textView44"
+        android:layout_toRightOf="@+id/delete_entry"
+        android:layout_toEndOf="@+id/delete_entry" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete and Return"
+        android:id="@+id/delete_entry"
+        android:layout_below="@+id/textView55"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/return_button"
+        android:layout_below="@+id/textView55"
+        android:layout_toRightOf="@+id/tripIdValue"
+        android:layout_toEndOf="@+id/tripIdValue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Id:"
+        android:id="@+id/tripId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new Text"
+        android:id="@+id/tripIdValue"
+        android:layout_above="@+id/textView11"
+        android:layout_alignLeft="@+id/vehicle1"
+        android:layout_alignStart="@+id/vehicle1" />
+
+
+</RelativeLayout>

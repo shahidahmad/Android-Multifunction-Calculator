@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<fragment-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:-->
+    <!-->-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+
+    >
+
+    <!--<Spinner-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/trans_list"-->
+        <!--android:layout_weight="0.03"-->
+        <!--android:entries="@array/vehicle_type"-->
+        <!--android:spinnerMode="dropdown" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter trip ID"
+        android:id="@+id/trip_id" />
+
+    <EditText
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/trip_id_value" />
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:text="Select method of transportation:"
+        android:id="@+id/trans_method"
+        android:layout_weight="0.03" />
+
+    <Spinner
+        android:name="vehicle_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trans_value"
+        android:layout_weight="0.03"
+        android:entries="@array/transportation_list"/>
+
+    <TextView
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:text="Enter trip distance(in KM):"
+        android:id="@+id/trip_distance"
+        android:layout_weight="0.03" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/trip_distance_text"
+        android:layout_weight="0.03" />
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:text="Enter trip date: "
+        android:id="@+id/trip_date"
+        android:layout_weight="0.03" />
+
+    <!--<DatePicker-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="108dp"-->
+        <!--android:id="@+id/trip_date_picker" />-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trip_date_value"
+        android:layout_weight="0.03"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="Enter trip notes: "
+        android:id="@+id/trip_note"
+        android:layout_weight="0.03" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trip_notes"
+        android:layout_weight="0.19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total CO2 Emission for this trip: "
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/co2_value"
+        android:layout_weight="0.08" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate carbon footprint"
+        android:id="@+id/calculate"
+        android:layout_weight="0.03"
+/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to database"
+        android:id="@+id/database_insertion"
+        android:layout_weight="0.03" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Trips"
+        android:id="@+id/view_trips"
+        android:layout_weight="0.03" />
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="transportation_list">
+        <item>Car</item>
+        <item>SUV</item>
+        <item>Van</item>
+        <item>Public transportation</item>
+        <item>Aeroplane</item>
+    </string-array>
+</resources>

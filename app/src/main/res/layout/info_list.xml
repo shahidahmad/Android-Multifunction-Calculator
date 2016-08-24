@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Copyright © 2011-2013 mysamplecode.com, All rights reserved.
+    This source code is provided to students of CST2335 for educational purposes only.
+    -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Header:    "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonDel"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true"  />
+
+</RelativeLayout>
